@@ -1,6 +1,3 @@
-# FinalProjectGroup13.py
-# Julius Sytstra, Jeroen Boers, Guido Cnossen - Group 13 - Project Tekst Analyse
-
 import nltk
 import sys
 from nltk.stem.wordnet import WordNetLemmatizer
@@ -15,9 +12,9 @@ sys.setdefaultencoding('utf-8')
 
 def standfordtagger(words):
 	try: 
-		os.environ['JAVAHOME'] = '/usr/lib/jvm/java-1.7.0-openjdk-amd64'
-		path = "/home/guido/PTA/stanford-ner-2014-06-16"
-		classifier = path + "/classifiers/" + "english.all.3class.distsim.crf.ser.gz"
+		os.environ['JAVAHOME'] = ''
+		path = ""
+		classifier = path + ""
 		jar = path + "/stanford-ner-3.4.jar" 
 		
 		st = NERTagger(classifier, jar)
